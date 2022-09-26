@@ -1,0 +1,11 @@
+<h2>Person list</h2>
+<p *ngIf="loading">Cargando...</p>
+
+<div *ngIf="!loading">
+
+  <tr *ngFor="let person of people">
+    <td>{{ person.id }}</td>
+    <td>{{ person.attributes.name }}</td>
+    <td>{{ person.attributes.phone }}</td>
+  </tr>
+</div>
